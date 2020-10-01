@@ -1,6 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.UI;
+using Debug = UnityEngine.Debug;
+using UnityEngine.SceneManagement;
 
 public class Roll : MonoBehaviour
 {
@@ -42,12 +46,13 @@ public class Roll : MonoBehaviour
     	rb.velocity = new Vector3(moveX, rb.velocity.y, moveY);
 
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
         if(other.gameObject.CompareTag("Dead"))
         {
-            Destroy(gameObject);
             losetext.SetActive(true);
+            SceneManager.LoadScene("SampleScene");
+
 		}
         if(other.gameObject.CompareTag("Smith"))
         {
