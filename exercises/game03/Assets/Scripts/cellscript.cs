@@ -51,7 +51,7 @@ public class cellscript : MonoBehaviour
         }
         else{
         	rending = gameObject.GetComponent<Renderer>();
-   			this.Living = Random.value < 0.5f;
+   			this.Living = Random.value < 0.7f;
    			countdown = 4.0f;
         }
     }
