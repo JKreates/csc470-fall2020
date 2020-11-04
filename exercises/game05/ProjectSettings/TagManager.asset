@@ -3,7 +3,28 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Red UI
+  - Blue UI
+  - Green UI
+  - White UI
+  - Black UI
+  - Orange UI
+  - Pink UI
+  - Canvas
+  - RedSet
+  - BlueSet
+  - GreenSet
+  - WhiteSet
+  - BlackSet
+  - OrangeSet
+  - PinkSet
+  - Evidence
+  - Accuse
+  - Exit1
+  - ShowEvidence1
+  - ShowEvidence2
+  - ShowEvidence3
   layers:
   - Default
   - TransparentFX
