@@ -46,7 +46,7 @@ public class Roll : MonoBehaviour
     	rb.velocity = new Vector3(moveX, rb.velocity.y, moveY);
 
     }
-    private void OnCollisionEnter(Collision other)
+    private void Collision(Collider other)
     {
         if(other.gameObject.CompareTag("Dead"))
         {

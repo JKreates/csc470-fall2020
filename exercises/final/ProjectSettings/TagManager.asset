@@ -3,7 +3,22 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - bootun1
+  - bootun2
+  - bootun3
+  - bootun4
+  - bootun5
+  - Enable1
+  - Plat1
+  - Mine
+  - Death
+  - End
+  - HD1
+  - Plat2
+  - Plat3
+  - BD1
+  - Life
   layers:
   - Default
   - TransparentFX
