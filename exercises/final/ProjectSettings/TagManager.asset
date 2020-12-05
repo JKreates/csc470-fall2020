@@ -19,6 +19,9 @@ TagManager:
   - Plat3
   - BD1
   - Life
+  - Death2
+  - Death3
+  - Win
   layers:
   - Default
   - TransparentFX

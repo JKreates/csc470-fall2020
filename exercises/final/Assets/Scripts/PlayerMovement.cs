@@ -77,5 +77,32 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("You got a life");
             audio.PlayOneShot(get);
         }
+        if(other.gameObject.CompareTag("Death")){
+            play.enabled = false;
+            count -= 1;
+            SetCountText();
+            play.transform.position = new Vector3(18, 13, 4);
+            play.enabled = true;
+        }
+        if(other.gameObject.CompareTag("Death2")){
+            play.enabled = false;
+            count -= 1;
+            SetCountText();
+            play.transform.position = new Vector3(852, 199, 4);
+            play.enabled = true;
+        }
+        if(other.gameObject.CompareTag("Win")){
+            SceneManager.LoadScene("Transition2");
+        }
+        if(other.gameObject.CompareTag("Death3")){
+            play.enabled = false;
+            count -= 1;
+            SetCountText();
+            play.transform.position = new Vector3(2243, 16, 4);
+            play.enabled = true;
+        }
+        if(count == 0){
+            SceneManager.LoadScene("GameOver");
+        }
     }   
 }

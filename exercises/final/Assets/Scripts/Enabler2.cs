@@ -24,8 +24,11 @@ public class Enabler2 : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerEnter(Collider other)
     {
-        	plat1.SetActive(true);
-        	plat2.SetActive(true);
-        	plat3.SetActive(true);
+        	plat1.GetComponent<Renderer>().enabled = true;
+            plat1.GetComponent<BoxCollider>().enabled = true;
+        	plat2.GetComponent<Renderer>().enabled = true;
+            plat2.GetComponent<BoxCollider>().enabled = true;
+        	plat3.GetComponent<Renderer>().enabled = true;
+            plat3.GetComponent<BoxCollider>().enabled = true;
         }
     }
